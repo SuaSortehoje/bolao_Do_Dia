@@ -136,9 +136,9 @@
         <!--TIME 03 -->
           <div class="palpite">
             <img style="display:none"onclick="alert('Ponte Preta')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/Ponte%20Preta.png" class="ft" alt="#">
-            <input style="display:none"type="tel" id="time5_input" class="inputnomeDoTime" placeholder="time1" maxlength="1" oninput="calcularTotal()">
+            <input style="display:none"type="tel" id="time5_input" class="inputnomeDoTime"value="-"; placeholder="time1" maxlength="1" oninput="calcularTotal()">
             
-            <input style="display:none" type="tel" id="time6_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal()">
+            <input style="display:none" type="tel"value="-" id="time6_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal()">
             <img style="display:none"onclick="alert('ceara')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/ceara.png" class="ft" alt="#">
         </div>
         <input type="number" id="valor_input" placeholder="Valor" min="1" oninput="calcularTotal()">
@@ -206,7 +206,7 @@ JOGADOR : *${nome}*
           
                    *sao paulo* : ${time3} x ${time4}: *criciuma*
              
-              ${time5} x ${time6}
+              ${time5}  ${time6}
 
                     VALOR A PAGAR : ${valor}    
  
@@ -233,7 +233,7 @@ JOGADOR : *${nome}*
             var time6 = parseInt(document.getElementById('time6_input').value) || 0;
 
             if (!isNaN(valor)) {
-                var total = 15 *(time1 + time2 + time3 + time4 + time5 + time6) * valor;
+                var total = 10 *(time1 + time2 + time3 + time4 + time5 + time6) * valor;
                 document.getElementById('total_display').innerText = `TOTAL A RECEBER: R$ ${total}`;
                 return total;
             } else {
