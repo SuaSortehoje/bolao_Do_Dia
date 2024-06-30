@@ -126,7 +126,7 @@
         
         <!--TIME 02 -->
         <div class="palpite">
-            <img onclick="alert('atletico-mineiro\n16:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/vitoria.png" class="ft" alt="#">
+            <img onclick="alert('vitoria\n16:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/vitoria.png" class="ft" alt="#">
             <input type="tel" id="time3_input" class="inputnomeDoTime" placeholder="time1" maxlength="1" oninput="calcularTotal()">
             x
             <input type="tel" id="time4_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal()">
@@ -183,7 +183,7 @@
             }
         }
 
-        function enviarMensagemParaWhatsapp() {
+        function enviarMensagemParaWhatsapp(); {
             var nome = document.getElementById("nome").value;
             var time1 = document.getElementById('time1_input').value;
             var time2 = document.getElementById('time2_input').value;
@@ -216,7 +216,7 @@ JOGADOR : *${nome}*
 
                  *Fortaleza* : ${time1} x ${time2}: *juventude* 
           
-                   *atletico-mineiro* : ${time3} x ${time4}: *atletico-Go*
+                   *vitoria* : ${time3} x ${time4}: *atletico-pr*
              
                 *Gremio* : ${time5} x ${time6}: *fluminense*
                 
