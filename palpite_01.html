@@ -106,14 +106,14 @@
 </head>
 <body onload="verificarHorario()">
     <div class="content">
-        <h1>BOLAO DO DIA 01/07</h1> 
-        <h2>O JOGO SÓ PODERÁ SER FEITO ATÉ AS<br><span class="horas">18:50</span></h2>
+        <h1>BOLAO DO DIA 30/06</h1> 
+        <h2>O JOGO SÓ PODERÁ SER FEITO ATÉ AS<br><span class="horas">15:50</span></h2>
         <img class="ima" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/images%20(37).jpg">
         <input type="text" placeholder="nome" id="nome">
         
            <!--TIME 01 -->
         <div class="palpite">
-            <img onclick="alert('palmeira\n16:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/palmeiras.png" class="ft" alt="#">
+            <img onclick="alert('palmeira\n16:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/%20palmeira.png" class="ft" alt="#">
             <input type="tel" id="time1_input" class="inputnomeDoTime" placeholder="time1" maxlength="1" oninput="calcularTotal(); verificarInputs()">
             x
             <input type="tel" id="time2_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal(); verificarInputs()">
@@ -129,44 +129,23 @@
         </div>
            <!--TIME 03 -->
         <div class="palpite">
-            <img onclick="alert('crb\n19:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/crb.png" class="ft" alt="#">
+            <img onclick="alert('crb\n21:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/crb.png" class="ft" alt="#">
             <input type="tel" id="time5_input" class="inputnomeDoTime" placeholder="time1" maxlength="1" oninput="calcularTotal(); verificarInputs()">
             x
             <input type="tel" id="time6_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal(); verificarInputs()">
-            <img onclick="alert('Brusque\n19:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/brusque.png" class="ft" alt="#">
+            <img onclick="alert('Brusque\n21:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/brusque.png" class="ft" alt="#">
         </div>
-        <!---
               <!--TIME 04 -->
-        <div class="palpite">
-            <img style ="display:none;" onclick="alert('Sao paulo\n19:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/Sao-Paulo-1.png" class="ft" alt="#">
-            <input style ="display:none; "type="tel" id="time7_input" class="inputnomeDoTime" placeholder="time1" maxlength="1" oninput="calcularTotal(); verificarInputs()">
-          <span  style ="display:none;">x    </span>
-            <input style ="display:none;"type="tel" id="time8_input" class="inputnomeDoTime" placeholder="time2" maxlength="1" oninput="calcularTotal(); verificarInputs()">
-            <img style ="display:none;"onclick="alert('Bahia\n19:00')" src="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/bahia.png" class="ft" alt="#">
-        </div>
-            
+   
         <input type="number" id="valor_input" placeholder="Valor" min="1" oninput="calcularTotal(); verificarInputs()">
         <div id="total_display">TOTAL A RECEBER: R$ 0</div>
         <button class="btn1" onclick="solicitarCodigo()" id="enviar_btn" disabled>VALIDAR PULE</button>
         <div class="proximo">
             <span>PRÓXIMOS HORÁRIOS</span><br>
-            <a href="palpite_02.html"><button class="btn3">02/07</button></a>
-            <a href="palpite_03.html"><button class="btn3">03/07</button></a>
-            <a href="palpite_04.html"><button class="btn5">04/07</button></a>
-            <a href="palpite_05.html"><button class="btn2">05/07</button></a>
-            <br>
-               <span>RESULTADOS</span><br>
-            <a href="palpite_02.html"><button class="btn3">02/07</button></a>
-            <a href="palpite_03.html"><button class="btn3">03/07</button></a>
-            <a href="palpite_04.html"><button class="btn5">04/07</button></a>
-            <a href="palpite_05.html"><button class="btn2">05/07</button></a>
-            
-               <a href="palpite_02.html"><button class="btn3">02/08</button></a>
-            <a href="palpite_03.html"><button class="btn3">03/09</button></a>
-         
-        </div>
-            
-            
+            <a href="jogosate09:00.html"><button class="btn3">09:00</button></a>
+            <a href="jogosate14:00.html"><button class="btn3">15:00</button></a>
+            <a href="jogosate19:00.html"><button class="btn5">19:00</button></a>
+            <a href="jogosate22:00.html"><button class="btn2">22:00</button></a>
         </div>
     </div>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -184,13 +163,11 @@
             const time4 = document.getElementById('time4_input').value;
             const time5 = document.getElementById('time5_input').value;
             const time6 = document.getElementById('time6_input').value;
-            const time7 = document.getElementById('time7_input').value;
-            const time8 = document.getElementById('time8_input').value;
             const valor = document.getElementById('valor_input').value;
 
             const enviarBtn = document.getElementById('enviar_btn');
 
-            if (nome && time1 && time2 && time3 && time4 && time5 && time6 && valor){
+            if (nome && time1 && time2 && time3 && time4 && time5 && time6 && valor) {
                 enviarBtn.disabled = false;
             } else {
                 enviarBtn.disabled = true;
@@ -214,9 +191,7 @@
             var time4 = document.getElementById('time4_input').value;
             var time5 = document.getElementById('time5_input').value;
             var time6 = document.getElementById('time6_input').value;
-          <!--  var time7 = document.getElementById('time7_input').value;
-            var time8 = document.getElementById('time8_input').value;
-           --> var valor = parseFloat(document.getElementById('valor_input').value);
+              var valor = parseFloat(document.getElementById('valor_input').value);
 
             if (nome && time1 && time2 && time3 && time4 && time5 && time6 && valor) {
                 var pegar = calcularTotal();
@@ -237,11 +212,10 @@ JOGADOR : *${nome}*
 
                  *palmeira* : ${time1} x ${time2}: *corinthians* 
           
-                   *Santos* : ${time3} x ${time4}: *Chapecoense*
+                   *Santos* : ${time3} x ${time4}: *chapecoense*
              
                 *crb* : ${time5} x ${time6}: *Brusque*
                 
-                  <!-- *Sao paulo* : ${time7} x ${time8}: *bahia*-->
 
                     VALOR A PAGAR : ${valor}    
  
@@ -266,11 +240,10 @@ JOGADOR : *${nome}*
             var time4 = parseInt(document.getElementById('time4_input').value) || 0;
             var time5 = parseInt(document.getElementById('time5_input').value) || 0;
             var time6 = parseInt(document.getElementById('time6_input').value) || 0;
-            var time7 = parseInt(document.getElementById('time7_input').value) || 0;
-            var time8 = parseInt(document.getElementById('time8_input').value) || 0;
+            
 
             if (!isNaN(valor)) {
-                var total = 30 *(time1 + time2 + time3 + time4 + time5 + time6 +time7 + time8) * valor;
+                var total = 40 *(time1 + time2 + time3 + time4 + time5 + time6 ) * valor;
                 document.getElementById('total_display').innerText = `TOTAL A RECEBER: R$ ${total}`;
                 return total;
             } else {
@@ -280,7 +253,7 @@ JOGADOR : *${nome}*
         }
 
         function verificarHorario() {
-            var dataLimite = new Date('2024-07-01T18:50:00'); // Data limite para as apostas
+            var dataLimite = new Date('2024-06-31T19:50:00'); // Data limite para as apostas
             var dataAtual = new Date();
 
             if (dataAtual > dataLimite) {
@@ -291,6 +264,11 @@ JOGADOR : *${nome}*
                 alert('A data limite para enviar os palpites já passou.');
             }
         }
+    </script>
+</body>
+</html>
+
+      }
     </script>
 </body>
 </html>
